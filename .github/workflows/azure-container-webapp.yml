@@ -46,7 +46,7 @@ jobs:
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
         with:
-          projectBaseDir: .
+          projectBaseDir: ${{ github.workspace }}
           args: >
             -Dsonar.organization=rivalkaran-1234
             -Dsonar.projectKey=rivalkaran-1234_cicddemo
